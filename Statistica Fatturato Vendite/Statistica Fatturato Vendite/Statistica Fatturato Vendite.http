@@ -1,0 +1,6 @@
+@Statistica_Fatturato_Vendite_HostAddress = http://localhost:5087
+
+GET {{Statistica_Fatturato_Vendite_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
