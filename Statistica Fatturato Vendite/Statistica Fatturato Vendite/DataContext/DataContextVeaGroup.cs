@@ -12,6 +12,8 @@ namespace Statistica_Fatturato_Vendite.DataContext
         public DbSet<Item> Item { get; set; }
         public DbSet<ValueEntry> ValueEntry { get; set; }
         public DbSet<Customer> Customer { get; set; }
+        public DbSet<DimensionSetEntry> DimensionSetEntry { get; set; }
+        public DbSet<DimensionValue> DimensionValue { get; set; }
 
 
     }
