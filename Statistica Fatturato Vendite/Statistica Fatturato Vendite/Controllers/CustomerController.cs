@@ -18,7 +18,7 @@ namespace Statistica_Fatturato_Vendite.Controllers
         public async Task<ActionResult<List<Customer>>> GetAsync()
         {
             var Customer = await _group.Customer.ToListAsync();
-
+            Customer = Customer.Where(c => c.CustomerNo != "").ToList();
             return Customer;
         }
 

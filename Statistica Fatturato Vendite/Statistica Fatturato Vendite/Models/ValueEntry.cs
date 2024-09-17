@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -28,6 +29,8 @@ namespace Statistica_Fatturato_Vendite.Models
         public decimal SalesAmount { get; set; }
         [Column("Document Line No_")]
         public int LocatioDocumentLineNo { get; set; }
+        [Column("Dimension Set ID")]
+        public int DimensionSetID { get; set; }
 
     }
 }
